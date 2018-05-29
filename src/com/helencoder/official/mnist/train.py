@@ -1,3 +1,7 @@
+# disable warning
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+
 import tensorflow as tf
 from tensorflow.examples.tutorials.mnist import input_data
 from model import Network
